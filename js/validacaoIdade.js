@@ -3,10 +3,10 @@
 //Função exportada como padrão, quando o arquivo for chamado, ela será retornada.
 export default function ehMaiorDeIdade(campo) {
     const dataNascimento = new Date(campo.value);
-    //Chamada da função de validação da idade.
-    validaIdade(dataNascimento);
-
-    console.log(validaIdade(dataNascimento));
+    
+    if (!validaIdade(dataNascimento)){
+        campo.setCustomValidity('O usuário não é maior de idade');
+    }
 }
 
 function validaIdade(data){

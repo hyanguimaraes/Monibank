@@ -1,4 +1,4 @@
-/* VALIDAÇÃO DE IDADE */
+/* Módulo de validação de idade */
 
 //Função exportada como padrão, quando o arquivo for chamado, ela será retornada.
 export default function ehMaiorDeIdade(campo) {
